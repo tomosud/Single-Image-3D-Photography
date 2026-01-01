@@ -1,6 +1,7 @@
 numpy
 torch
 diffusers==0.11.1
+huggingface_hub<0.16.0
 opencv-python
 transformers
 ftfy

@@ -10,8 +10,8 @@ if exist .venv (
     rmdir /s /q .venv
 )
 
-echo 新しい仮想環境を作成中...
-python -m venv .venv
+echo 新しい仮想環境を作成中（Python 3.8）...
+uv venv --python 3.8
 
 echo 仮想環境をアクティベート中...
 call .venv\Scripts\activate
@@ -20,7 +20,6 @@ echo.
 echo ----------------------------------------------------------------------
 echo 基本パッケージをインストール中...
 echo ----------------------------------------------------------------------
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+uv pip install -r requirements.txt
 
 pause
