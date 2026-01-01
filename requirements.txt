@@ -7,7 +7,7 @@ ftfy
 paddlepaddle
 paddlehub
 open3d
-Pillow==9.0.0
+Pillow>=10.0.0
 timm
 matplotlib
 imageio
